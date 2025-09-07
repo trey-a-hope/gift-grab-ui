@@ -60,10 +60,12 @@ class _LongTextInputState extends State<LongTextInput> {
         widget.onChanged(value);
         _isInternalUpdate = false;
       },
-      style: theme.textTheme.displayLarge,
+      style: theme.textTheme.headlineMedium,
       decoration: InputDecoration(
         labelText: widget.labelText,
-        labelStyle: theme.textTheme.displayLarge?.copyWith(color: Colors.grey),
+        labelStyle: theme.textTheme.headlineMedium?.copyWith(
+          color: Colors.grey,
+        ),
         prefixIcon: const Icon(Icons.description),
         border: const OutlineInputBorder(),
         errorText: widget.longText.errorMessage,
