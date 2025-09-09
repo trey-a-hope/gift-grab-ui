@@ -6,12 +6,14 @@ class LongTextInput extends StatefulWidget {
   final String? labelText;
   final String? helperText;
   final void Function(String) onChanged;
+  final bool enabled;
 
   const LongTextInput(
     this.longText, {
     this.labelText,
     this.helperText,
     required this.onChanged,
+    this.enabled = true,
     super.key,
   });
 
@@ -77,6 +79,7 @@ class _LongTextInputState extends State<LongTextInput> {
       maxLines: LongText.maxLines,
       minLines: LongText.minLines,
       maxLength: LongText.max,
+      enabled: widget.enabled,
     );
   }
 }

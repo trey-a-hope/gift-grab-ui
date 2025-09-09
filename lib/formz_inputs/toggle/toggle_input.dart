@@ -20,10 +20,10 @@ class ToggleInput extends StatelessWidget {
     final theme = Theme.of(context);
 
     return SwitchListTile(
-      title: Text(title, style: theme.textTheme.displayLarge),
+      title: Text(title, style: theme.textTheme.headlineMedium),
       subtitle: subtitle == null
           ? null
-          : Text(subtitle!, style: theme.textTheme.headlineSmall),
+          : Text(subtitle!, style: theme.textTheme.bodyLarge),
       value: toggle.value,
       onChanged: onChanged,
     );

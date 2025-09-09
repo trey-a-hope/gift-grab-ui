@@ -27,14 +27,14 @@ class RangeInput extends StatelessWidget {
               title,
               style: Theme.of(
                 context,
-              ).textTheme.displayLarge?.copyWith(color: Colors.white),
+              ).textTheme.headlineMedium?.copyWith(color: Colors.white),
             ),
             const Spacer(),
             Text(
               '${range.value}',
               style: Theme.of(
                 context,
-              ).textTheme.displayLarge?.copyWith(color: Colors.white),
+              ).textTheme.headlineMedium?.copyWith(color: Colors.white),
             ),
           ],
         ),
